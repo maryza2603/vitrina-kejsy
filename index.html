@@ -199,6 +199,34 @@ section.block{border-top-color:var(--line)}
 footer{color:#6E655D}
 
 .facts{display:none}
+/* Варианты карточек работ: три схемы по кругу, чтобы сайты не выглядели одинаково. */
+@media (min-width:900px){
+  /* 1: скриншоты слева, название в колонке с текстом (как было) */
+  .case:nth-child(3n+1){grid-template-columns:auto 1fr}
+  .case:nth-child(3n+1) .devices{order:0}
+  /* 2: бежевая панель, скриншоты справа */
+  .case:nth-child(3n+2){grid-template-columns:1fr auto;background:#EFE4D8;border-radius:28px;padding:40px 44px;margin:18px 0;border-top:0}
+  .case:nth-child(3n+2) .devices{order:2}
+  /* 3: огромное название над всем, под ним скриншоты и текст */
+  .case:nth-child(3n){grid-template-columns:auto 1fr;column-gap:56px;row-gap:6px;align-items:start}
+  .case:nth-child(3n) .case-text{display:contents}
+  .case:nth-child(3n) .devices{order:0;grid-column:1;grid-row:2 / span 6;align-self:start}
+  .case:nth-child(3n) h3{grid-column:1 / -1;grid-row:1;margin:0 0 18px;font-size:clamp(36px,4.8vw,64px);line-height:1.02;letter-spacing:-.02em}
+  .case:nth-child(3n) .case-text > *:not(h3){grid-column:2}
+}
+.case:nth-child(3n+2) .badge.demo{background:#E6D6C5}
+.case:nth-child(3n+2) .quote{background:#FFFDFA}
+.case:nth-child(3n+2) + .case{border-top:0}
+@media (max-width:899px){
+  .case:nth-child(3n+2){background:#EFE4D8;border-radius:22px;padding:24px 18px;margin:14px 0}
+  .case:nth-child(3n) h3{font-size:clamp(30px,8vw,40px);line-height:1.05}
+}
+
+/* Правки по правилам типографики */
+h1{line-height:1.06}
+.badge{font-size:13px}
+.case:nth-child(3n+2) .story li b,.case:nth-child(3n+2) .open{color:#8F3F20}
+.browser .bar span,.bubble-time{font-size:12px}
 </style>
 </head>
 <body>
