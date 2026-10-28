@@ -3,18 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Мария Зачиняева – сайты для малого бизнеса, Работаю по всей России</title>
-<meta name="description" content="Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.">
-<meta property="og:title" content="Мария Зачиняева – сайты для малого бизнеса, Работаю по всей России">
-<meta property="og:description" content="Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.">
+<title>Мария Зачиняева - сайты для малого бизнеса, Работаю по всей России</title>
+<meta name="description" content="Соберу готовое демо вашего сайта до разговора - вы смотрите результат, а потом решаете.">
+<meta property="og:title" content="Мария Зачиняева - сайты для малого бизнеса, Работаю по всей России">
+<meta property="og:description" content="Соберу готовое демо вашего сайта до разговора - вы смотрите результат, а потом решаете.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/case-multiuzel-ru-desktop.webp">
+<link rel="icon" href="assets/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=2">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png?v=2">
+<link rel="apple-touch-icon" href="assets/favicon-180.png?v=2">
 <meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FAF6F1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* Витрина веб-мастера. Палитра задаётся тремя переменными в :root – их меняет сборка (vitrina.mjs). */
+/* Витрина веб-мастера. Палитра задаётся тремя переменными в :root - их меняет сборка (vitrina.mjs). */
 :root{
   --accent:#DD4B33; --ink:#1B1A1F; --soft:#F7F1EE;
   --paper:#FFFFFF; --line:#E7E8EE; --ink-2:#5B5D68; --ink-3:#8E909A;
@@ -115,7 +120,7 @@ section.block{padding:72px 0;border-top:1px solid var(--line)}
 .price p{margin:0;color:var(--ink-2)}
 .price .sum{font:600 20px/1 var(--display);white-space:nowrap;color:var(--accent)}
 
-/* как работаю – настоящая последовательность, поэтому номера */
+/* как работаю - настоящая последовательность, поэтому номера */
 .steps{display:grid;gap:14px;counter-reset:s;list-style:none;margin:0;padding:0}
 @media (min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
 .steps li{position:relative;background:var(--soft);border-radius:var(--r);padding:24px 22px 26px;counter-increment:s}
@@ -149,6 +154,82 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* Стиль портфолио Марии поверх витрины: крем, бежевый, терракота, PT Serif + Manrope. Подмешивается после сборки (apply-style.py). */
+:root{
+  --accent:#B4532F; --ink:#1E1D1B; --soft:#EFE4D8;
+  --paper:#FAF6F1; --line:#E4D9CD; --ink-2:#5C534B; --ink-3:#6E655D;
+  --display:"PT Serif",Georgia,serif; --body:"Manrope",system-ui,sans-serif;
+  --r:18px;
+  --shadow:0 10px 30px -12px rgba(80,45,25,.18);
+}
+body{background:var(--paper);font-weight:500}
+h1,h2,h3{font-weight:700;letter-spacing:-.01em}
+h1{line-height:1.08}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{font-weight:500}
+.eyebrow{text-transform:none;letter-spacing:.01em;font-size:14px;font-weight:700}
+.top{background:rgba(250,246,241,.9)}
+.brand{font-weight:700}
+.btn{font-family:var(--body);font-weight:700;border-radius:14px}
+.btn-main{box-shadow:0 12px 24px -14px rgba(180,83,47,.7)}
+.btn-main:hover{background:#9C4524}
+.btn-ghost{background:#EFE4D8}
+.btn-ghost:hover{background:#E6D6C5}
+.hello{background:#EFE4D8}
+.facts b{font-weight:700}
+.fan::before{background:radial-gradient(closest-side,#EFE4D8,transparent 72%)}
+.phone{box-shadow:0 40px 60px -30px rgba(60,35,20,.5),inset 0 0 0 2px #2A2C33;background:#1E1D1B}
+.phone .notch{background:#1E1D1B}
+section.block{border-top-color:var(--line)}
+.browser{background:#FFFDFA;box-shadow:0 30px 50px -30px rgba(60,35,20,.4),0 0 0 1px var(--line)}
+.browser .bar{background:#EFE4D8}
+.browser .bar i{background:#D9C8B6}
+.badge{letter-spacing:.01em;font-weight:700;border-radius:10px}
+.badge.demo{background:#EFE4D8;color:#5C534B}
+.story li b{text-transform:none;letter-spacing:0;font-size:14px;font-weight:700;color:var(--accent)}
+.quote{background:#EFE4D8;border-radius:var(--r);font-family:var(--display);font-style:italic;font-size:17px;line-height:1.6}
+.quote cite{font-family:var(--body);font-style:normal;font-weight:600;color:#6E655D}
+.case + .case{border-top:1px dashed #D9C8B6}
+.price .sum{font-weight:700}
+.steps li{background:#EFE4D8;border-radius:var(--r)}
+.steps li::before{font-family:var(--display)}
+.final{background:#2B211C;border-radius:24px}
+.final p{color:rgba(255,253,250,.76)}
+.final .btn-ghost{background:rgba(255,253,250,.1);color:#FFFDFA}
+.chat{background:#FFFDFA;border-radius:20px}
+.typing{background:#EFE4D8}
+.toast{background:#2B211C}
+footer{color:#6E655D}
+
+.facts{display:none}
+/* Варианты карточек работ: три схемы по кругу, чтобы сайты не выглядели одинаково. */
+@media (min-width:900px){
+  /* 1: скриншоты слева, название в колонке с текстом (как было) */
+  .case:nth-child(3n+1){grid-template-columns:auto 1fr}
+  .case:nth-child(3n+1) .devices{order:0}
+  /* 2: бежевая панель, скриншоты справа */
+  .case:nth-child(3n+2){grid-template-columns:1fr auto;background:#EFE4D8;border-radius:28px;padding:40px 44px;margin:18px 0;border-top:0}
+  .case:nth-child(3n+2) .devices{order:2}
+  /* 3: огромное название над всем, под ним скриншоты и текст */
+  .case:nth-child(3n){grid-template-columns:auto 1fr;column-gap:56px;row-gap:6px;align-items:start}
+  .case:nth-child(3n) .case-text{display:contents}
+  .case:nth-child(3n) .devices{order:0;grid-column:1;grid-row:2 / span 6;align-self:start}
+  .case:nth-child(3n) h3{grid-column:1 / -1;grid-row:1;margin:0 0 18px;font-size:clamp(36px,4.8vw,64px);line-height:1.02;letter-spacing:-.02em}
+  .case:nth-child(3n) .case-text > *:not(h3){grid-column:2}
+}
+.case:nth-child(3n+2) .badge.demo{background:#E6D6C5}
+.case:nth-child(3n+2) .quote{background:#FFFDFA}
+.case:nth-child(3n+2) + .case{border-top:0}
+@media (max-width:899px){
+  .case:nth-child(3n+2){background:#EFE4D8;border-radius:22px;padding:24px 18px;margin:14px 0}
+  .case:nth-child(3n) h3{font-size:clamp(30px,8vw,40px);line-height:1.05}
+}
+
+/* Правки по правилам типографики */
+h1{line-height:1.06}
+.badge{font-size:13px}
+.case:nth-child(3n+2) .story li b,.case:nth-child(3n+2) .open{color:#8F3F20}
+.browser .bar span,.bubble-time{font-size:12px}
 </style>
 </head>
 <body>
@@ -170,12 +251,12 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   </section>
 
   <section class="block" id="works">
-    <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделал</h2></div><p id="worksNote"></p></div>
+    <div class="block-head reveal"><div><div class="eyebrow">Работы</div><h2>Сайты, которые я сделала</h2></div><p id="worksNote"></p></div>
     <div id="cases"></div>
   </section>
 
   <section class="block" id="services">
-    <div class="block-head reveal"><div><div class="eyebrow">Услуги и цены</div><h2>Что могу сделать для вас</h2></div><p>Точную цену назову, когда увижу задачу. Демо – бесплатно.</p></div>
+    <div class="block-head reveal"><div><div class="eyebrow">Услуги и цены</div><h2>Что могу сделать для вас</h2></div><p>Точную цену назову, когда увижу задачу. Демо - бесплатно.</p></div>
     <ul class="price reveal" id="price"></ul>
   </section>
 
@@ -188,7 +269,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
     <div>
       <div class="eyebrow" style="color:rgba(255,255,255,.6)">Написать</div>
       <h2 id="finalTitle">Покажу демо вашего сайта</h2>
-      <p>Нажмите на мессенджер – сообщение уже набрано, останется отправить. Отвечаю в течение дня.</p>
+      <p>Выберите удобный способ связи - сообщение уже набрано, останется отправить. Отвечаю в течение дня.</p>
       <div class="cta" data-cta></div>
     </div>
     <div class="chat" aria-hidden="true">
@@ -200,10 +281,10 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   </section>
 </main>
 
-<footer class="wrap"><span id="foot"></span><span>Сайт собран с Claude Code</span></footer>
+<footer class="wrap"><span id="foot"></span></footer>
 <div class="toast" id="toast" role="status"></div>
 
-<script id="data" type="application/json">{"name":"Мария Зачиняева","city":"Работаю по всей России","cityIn":"России","photo":"assets/photo.webp","palette":"В","messengers":{"telegram":"luminoso89","vk":"https://vk.ru/dizainsharacterom","phone":"79919879341","sms":"79919879341","email":"maryza2603@gmail.com","bot":"https://t.me/luminoso_sites_bot"},"message":"Здравствуйте! Хочу заказать сайт. Вижу ваши работы на витрине - подскажите, как начать?","services":[{"title":"Сайт-визитка или лендинг","desc":"Сайт вручную, без конструктора: быстро открывается, удобен с телефона, кнопки связи и форма заявки.","price":"от 3 000 до 11 000 ₽"},{"title":"Сайт на Tilda","desc":"Передаю копию страницы в ваш аккаунт, показываю, как самому менять тексты и фото.","price":"от 5 000 до 15 000 ₽"},{"title":"Сайт с записью, конструктором товара, доработки","desc":"Онлайн-запись, расчёт цены с картинкой, подключение Telegram-бота. Цена зависит от задачи.","price":"от 7 000 до 50 000 ₽"}],"cases":[{"title":"МультиУзел","niche":"сайт-конструктор станка","city":"","url":"https://multiuzel.ru/","kind":"real","task":"Нужен сайт-конструктор, в котором посетитель сам собирает станок.","did":"Сделала сайт-конструктор станка.","result":"Сдано за 3 дня вместо 10.","quote":"Была задача сделать сайт конструктор. Задача выполнена за 3 дня, вместо 10. Приятно удивлен подходом и компетенциями. Благодарю.","quoteAuthor":"yam0, заказчик на Kwork","about":"Сайт-конструктор станка","desktop":"assets/case-multiuzel-ru-desktop.webp","mobile":"assets/case-multiuzel-ru-mobile.webp"},{"title":"Фонд «Красная Шапочка»","niche":"благотворительный фонд","city":"","url":"","kind":"real","task":"Перенести готовый HTML-сайт фонда на Тильду, чтобы заказчик сам менял тексты и фото.","did":"Перенесла 13 блоков: главный экран, о фонде, программы, окно «Помочь фонду». Передала копию страницы в аккаунт заказчика и дала инструкцию по правкам.","result":"Заказ принят заказчиком.","about":"Перенос сайта благотворительного фонда на Тильду","desktop":"assets/fond-desktop.webp","mobile":"assets/fond-mobile.webp"},{"title":"Консультант по питанию","niche":"консультации по правильному питанию","city":"","url":"https://natalya-pitanie.netlify.app/","kind":"real","task":"Сайт-визитка консультанта по питанию: услуги, цены, запись.","did":"Сделала сайт с нуля: услуги и цены, рассказ о консультанте, кнопки связи через MAX, ВК и почту.","result":"","quote":"Хочу выразить благодарность Марии за отлично выполненную работу по созданию моего сайта! Особенно хочу отметить индивидуальный подход и готовность учитывать все мои пожелания. Сайт получился именно таким, как я мечтала - современным и понятным для пользователей. Все возникшие вопросы решаются оперативно. Спасибо за Вашу работу Мария! Я очень довольна результатом!","quoteAuthor":"Наталья П., консультант по питанию","about":"Сайт консультанта по питанию","desktop":"assets/case-natalya-pitanie-netlify-app-desktop.webp","mobile":"assets/case-natalya-pitanie-netlify-app-mobile.webp"},{"title":"Студия маникюра Олеси Вторушиной","niche":"маникюр и педикюр","city":"Томск","url":"https://olesya-manikur.netlify.app/","kind":"real","task":"Сайт для студии маникюра и педикюра: показать работы и принимать записи.","did":"Сделала сайт с нуля: галерея работ, прайс, адрес, кнопки связи.","result":"","quote":"Очень нужен был сайт для студии маникюра и педикюра. Мария учла все мои задумки. Сделала красивый и понятный сайт. Клиентам удобно смотреть работы, записываться. Однозначно рекомендую!","quoteAuthor":"Олеся В., мастер маникюра, Томск","about":"Сайт студии маникюра","desktop":"assets/case-olesya-manikur-netlify-app-desktop.webp","mobile":"assets/case-olesya-manikur-netlify-app-mobile.webp"},{"title":"Кипарис","niche":"мини-отель","city":"Алушта","url":"https://maryza2603.github.io/otel-krym-demo/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\demo-otel-krym","kind":"demo","about":"Мини-отель у моря: номера, фото, цены и бронирование в один клик.","desktop":"assets/case-maryza2603-github-io-otel-krym-demo-desktop.webp","mobile":"assets/case-maryza2603-github-io-otel-krym-demo-mobile.webp"},{"title":"Амадея","niche":"цветы и букеты","city":"Благовещенск","url":"https://maryza2603.github.io/amadeya-1076601803-demo/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\blagoveshchensk-cvety\\amadeya-1076601803-demo","kind":"demo","about":"Цветочный магазин: каталог букетов, цены и заказ в мессенджер.","desktop":"assets/case-maryza2603-github-io-amadeya-1076601803-demo-desktop.webp","mobile":"assets/case-maryza2603-github-io-amadeya-1076601803-demo-mobile.webp"},{"title":"Мастерская по ремонту одежды","niche":"ремонт одежды","city":"Казань","url":"https://maryza2603.github.io/masterskaya-odezhdy-kazan/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\kazan-atelie\\masterskaya-remonta-odezhdy-183697992117-vs38-lite","kind":"demo","about":"Ремонт одежды: услуги, цены и запись без звонка.","desktop":"assets/case-maryza2603-github-io-masterskaya-odezhdy-kazan-desktop.webp","mobile":"assets/case-maryza2603-github-io-masterskaya-odezhdy-kazan-mobile.webp"},{"title":"Основа Маникюра","niche":"маникюр и педикюр","city":"Краснодар","url":"https://maryza2603.github.io/osnova-manikyura-krasnodar/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\krasnodar-nogti\\osnova-manikyura-221055728812-vs06-prod","kind":"demo","about":"Студия маникюра: работы, прайс и онлайн-запись.","desktop":"assets/case-maryza2603-github-io-osnova-manikyura-krasnodar-desktop.webp","mobile":"assets/case-maryza2603-github-io-osnova-manikyura-krasnodar-mobile.webp"},{"title":"Ковер-Самолёт","niche":"чистка ковров","city":"Красноярск","url":"https://maryza2603.github.io/kover-samolet-1047915958-demo/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\krasnoyarsk-klining\\kover-samolet-1047915958-demo","kind":"demo","about":"Чистка ковров: расчёт по площади и заявка на выезд.","desktop":"assets/case-maryza2603-github-io-kover-samolet-1047915958-demo-desktop.webp","mobile":"assets/case-maryza2603-github-io-kover-samolet-1047915958-demo-mobile.webp"},{"title":"Тайм Транс","niche":"грузоперевозки","city":"Ростов-на-Дону","url":"https://maryza2603.github.io/taym-trans-rostov/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\rostov-gruzoperevozki\\taym-trans-118070211568-vs29-lite","kind":"demo","about":"Грузоперевозки: тарифы, машины и быстрый заказ.","desktop":"assets/case-maryza2603-github-io-taym-trans-rostov-desktop.webp","mobile":"assets/case-maryza2603-github-io-taym-trans-rostov-mobile.webp"},{"title":"Шиномонтаж (село Покровское)","niche":"шиномонтаж","city":"Таганрог","url":"https://maryza2603.github.io/pokrovskoe-shinomontazh/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\taganrog-shinomontazh\\shinomontazh-3838295564-vs03-prod","kind":"demo","about":"Шиномонтаж: прайс, запись и контакты в одном месте.","desktop":"assets/case-maryza2603-github-io-pokrovskoe-shinomontazh-desktop.webp","mobile":"assets/case-maryza2603-github-io-pokrovskoe-shinomontazh-mobile.webp"},{"title":"Black Shelby","niche":"автомойка и детейлинг","city":"Владивосток","url":"https://maryza2603.github.io/black-shelby-vladivostok/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\vladivostok-avtoservis\\black-shelby-156066883618-demo","kind":"demo","about":"Автомойка и детейлинг: услуги, работы и запись.","desktop":"assets/case-maryza2603-github-io-black-shelby-vladivostok-desktop.webp","mobile":"assets/case-maryza2603-github-io-black-shelby-vladivostok-mobile.webp"},{"title":"Тигр","niche":"барбершоп","city":"Воронеж","url":"https://maryza2603.github.io/tigr-voronezh/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\voronezh-parikmaher\\tigr-141952330425-vs33-prod","kind":"demo","about":"Барбершоп: мастера, цены и запись онлайн.","desktop":"assets/case-maryza2603-github-io-tigr-voronezh-desktop.webp","mobile":"assets/case-maryza2603-github-io-tigr-voronezh-mobile.webp"}],"h1":"Сайты для малого бизнеса \u003cem>по всей России\u003c/em>"}</script>
+<script id="data" type="application/json">{"name":"Мария Зачиняева","city":"Работаю по всей России","cityIn":"России","photo":"assets/photo.webp","palette":"В","messengers":{"telegram":"luminoso89","vk":"https://vk.ru/dizainsharacterom","phone":"79919879341","sms":"79919879341","email":"maryza2603@gmail.com","bot":"https://t.me/luminoso_sites_bot"},"message":"Здравствуйте! Хочу заказать сайт. Вижу ваши работы на витрине - подскажите, как начать?","services":[{"title":"Сайт-визитка или лендинг","desc":"Сайт вручную, без конструктора: быстро открывается, удобен с телефона, кнопки связи и форма заявки.","price":"от 3 000 до 11 000 ₽"},{"title":"Сайт на Tilda","desc":"Передаю копию страницы в ваш аккаунт, показываю, как самому менять тексты и фото.","price":"от 5 000 до 15 000 ₽"},{"title":"Сайт с записью, конструктором товара, доработки","desc":"Онлайн-запись, расчёт цены с картинкой, подключение Telegram-бота. Цена зависит от задачи.","price":"от 7 000 до 50 000 ₽"}],"cases":[{"title":"МультиУзел","niche":"сайт-конструктор станка","city":"","url":"https://multiuzel.ru/","kind":"real","task":"Нужен сайт-конструктор, в котором посетитель сам собирает станок.","did":"Сделала сайт-конструктор станка.","result":"Сдано за 3 дня вместо 10.","quote":"Была задача сделать сайт конструктор. Задача выполнена за 3 дня, вместо 10. Приятно удивлен подходом и компетенциями. Благодарю.","quoteAuthor":"yam0, заказчик на Kwork","about":"Сайт-конструктор станка","desktop":"assets/case-multiuzel-ru-desktop.webp","mobile":"assets/case-multiuzel-ru-mobile.webp"},{"title":"Фонд «Красная Шапочка»","niche":"благотворительный фонд","city":"","url":"","kind":"real","task":"Перенести готовый HTML-сайт фонда на Тильду, чтобы заказчик сам менял тексты и фото.","did":"Перенесла 13 блоков: главный экран, о фонде, программы, окно «Помочь фонду». Передала копию страницы в аккаунт заказчика и дала инструкцию по правкам.","result":"Заказ принят заказчиком.","about":"Перенос сайта благотворительного фонда на Тильду","desktop":"assets/fond-desktop.webp","mobile":"assets/fond-mobile.webp"},{"title":"Консультант по питанию","niche":"консультации по правильному питанию","city":"","url":"https://natalya-pitanie.netlify.app/","kind":"real","task":"Сайт-визитка консультанта по питанию: услуги, цены, запись.","did":"Сделала сайт с нуля: услуги и цены, рассказ о консультанте, кнопки связи через MAX, ВК и почту.","result":"","quote":"Хочу выразить благодарность Марии за отлично выполненную работу по созданию моего сайта! Особенно хочу отметить индивидуальный подход и готовность учитывать все мои пожелания. Сайт получился именно таким, как я мечтала - современным и понятным для пользователей. Все возникшие вопросы решаются оперативно. Спасибо за Вашу работу Мария! Я очень довольна результатом!","quoteAuthor":"Наталья П., консультант по питанию","about":"Сайт консультанта по питанию","desktop":"assets/case-natalya-pitanie-netlify-app-desktop.webp","mobile":"assets/case-natalya-pitanie-netlify-app-mobile.webp"},{"title":"Студия маникюра Олеси Вторушиной","niche":"маникюр и педикюр","city":"Томск","url":"https://olesya-manikur.netlify.app/","kind":"real","task":"Сайт для студии маникюра и педикюра: показать работы и принимать записи.","did":"Сделала сайт с нуля: галерея работ, прайс, адрес, кнопки связи.","result":"","quote":"Очень нужен был сайт для студии маникюра и педикюра. Мария учла все мои задумки. Сделала красивый и понятный сайт. Клиентам удобно смотреть работы, записываться. Однозначно рекомендую!","quoteAuthor":"Олеся В., мастер маникюра, Томск","about":"Сайт студии маникюра","desktop":"assets/case-olesya-manikur-netlify-app-desktop.webp","mobile":"assets/case-olesya-manikur-netlify-app-mobile.webp"},{"title":"Кипарис","niche":"мини-отель","city":"Алушта","url":"https://maryza2603.github.io/otel-krym-demo/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\demo-otel-krym","kind":"demo","about":"Мини-отель у моря: номера, фото, цены и бронирование в один клик.","desktop":"assets/case-maryza2603-github-io-otel-krym-demo-desktop.webp","mobile":"assets/case-maryza2603-github-io-otel-krym-demo-mobile.webp"},{"title":"Амадея","niche":"цветы и букеты","city":"Благовещенск","url":"https://maryza2603.github.io/amadeya-1076601803-demo/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\blagoveshchensk-cvety\\amadeya-1076601803-demo","kind":"demo","about":"Цветочный магазин: каталог букетов, цены и заказ в мессенджер.","desktop":"assets/case-maryza2603-github-io-amadeya-1076601803-demo-desktop.webp","mobile":"assets/case-maryza2603-github-io-amadeya-1076601803-demo-mobile.webp"},{"title":"Мастерская по ремонту одежды","niche":"ремонт одежды","city":"Казань","url":"https://maryza2603.github.io/masterskaya-odezhdy-kazan/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\kazan-atelie\\masterskaya-remonta-odezhdy-183697992117-vs38-lite","kind":"demo","about":"Ремонт одежды: услуги, цены и запись без звонка.","desktop":"assets/case-maryza2603-github-io-masterskaya-odezhdy-kazan-desktop.webp","mobile":"assets/case-maryza2603-github-io-masterskaya-odezhdy-kazan-mobile.webp"},{"title":"Основа Маникюра","niche":"маникюр и педикюр","city":"Краснодар","url":"https://maryza2603.github.io/osnova-manikyura-krasnodar/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\krasnodar-nogti\\osnova-manikyura-221055728812-vs06-prod","kind":"demo","about":"Студия маникюра: работы, прайс и онлайн-запись.","desktop":"assets/case-maryza2603-github-io-osnova-manikyura-krasnodar-desktop.webp","mobile":"assets/case-maryza2603-github-io-osnova-manikyura-krasnodar-mobile.webp"},{"title":"Ковер-Самолёт","niche":"чистка ковров","city":"Красноярск","url":"https://maryza2603.github.io/kover-samolet-1047915958-demo/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\krasnoyarsk-klining\\kover-samolet-1047915958-demo","kind":"demo","about":"Чистка ковров: расчёт по площади и заявка на выезд.","desktop":"assets/case-maryza2603-github-io-kover-samolet-1047915958-demo-desktop.webp","mobile":"assets/case-maryza2603-github-io-kover-samolet-1047915958-demo-mobile.webp"},{"title":"Тайм Транс","niche":"грузоперевозки","city":"Ростов-на-Дону","url":"https://maryza2603.github.io/taym-trans-rostov/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\rostov-gruzoperevozki\\taym-trans-118070211568-vs29-lite","kind":"demo","about":"Грузоперевозки: тарифы, машины и быстрый заказ.","desktop":"assets/case-maryza2603-github-io-taym-trans-rostov-desktop.webp","mobile":"assets/case-maryza2603-github-io-taym-trans-rostov-mobile.webp"},{"title":"Шиномонтаж (село Покровское)","niche":"шиномонтаж","city":"Таганрог","url":"https://maryza2603.github.io/pokrovskoe-shinomontazh/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\taganrog-shinomontazh\\shinomontazh-3838295564-vs03-prod","kind":"demo","about":"Шиномонтаж: прайс, запись и контакты в одном месте.","desktop":"assets/case-maryza2603-github-io-pokrovskoe-shinomontazh-desktop.webp","mobile":"assets/case-maryza2603-github-io-pokrovskoe-shinomontazh-mobile.webp"},{"title":"Black Shelby","niche":"автомойка и детейлинг","city":"Владивосток","url":"https://maryza2603.github.io/black-shelby-vladivostok/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\vladivostok-avtoservis\\black-shelby-156066883618-demo","kind":"demo","about":"Автомойка и детейлинг: услуги, работы и запись.","desktop":"assets/case-maryza2603-github-io-black-shelby-vladivostok-desktop.webp","mobile":"assets/case-maryza2603-github-io-black-shelby-vladivostok-mobile.webp"},{"title":"Тигр","niche":"барбершоп","city":"Воронеж","url":"https://maryza2603.github.io/tigr-voronezh/","folder":"C:\\Users\\user\\Claude\\Новый проект задание\\ohota\\voronezh-parikmaher\\tigr-141952330425-vs33-prod","kind":"demo","about":"Барбершоп: мастера, цены и запись онлайн.","desktop":"assets/case-maryza2603-github-io-tigr-voronezh-desktop.webp","mobile":"assets/case-maryza2603-github-io-tigr-voronezh-mobile.webp"}],"h1":"Сайты для малого бизнеса <em>по всей России</em>"}</script>
 <script>
 (() => {
   const D = JSON.parse(document.getElementById('data').textContent);
@@ -216,7 +297,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   $('brandInit').textContent = init; $('brandName').textContent = D.name;
   $('hello').innerHTML = `${ava}<span>Привет, я ${esc(first)}</span>`;
   $('h1').innerHTML = D.h1 || `Сайты для малого бизнеса${D.city ? ` в <em>${esc(D.cityIn || D.city)}</em>` : ''}`;
-  $('lead').textContent = D.lead || 'Соберу готовое демо вашего сайта до разговора – вы смотрите результат, а потом решаете.';
+  $('lead').textContent = D.lead || 'Соберу готовое демо вашего сайта до разговора - вы смотрите результат, а потом решаете.';
   $('chatAva').innerHTML = ava; $('chatName').textContent = D.name;
   $('bubble').textContent = D.message;
   $('foot').textContent = `© ${new Date().getFullYear()} ${D.name}${D.city ? ', ' + D.city : ''}`;
@@ -231,8 +312,8 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
     niches.length ? `<span><b>${niches.length}</b>${word(niches.length, 'ниша', 'ниши', 'ниш')}</span>` : ''
   ].join('');
   const kinds = new Set(cases.map((c) => c.kind || 'demo'));
-  if (kinds.size > 1) $('worksNote').textContent = [kinds.has('real') && '«Реальный заказ» – за сайт заплатил владелец', kinds.has('study') && '«Учебный кейс» – задача из обучения', kinds.has('demo') && '«Демо-проект» – сайт, собранный на пробу'].filter(Boolean).join('. ') + '.';
-  else $('worksNote').textContent = real && real < cases.length ? '«Реальный заказ» – сайт, за который заплатил владелец. «Демо-проект» – собранный на пробу, «Учебный кейс» – задача из обучения.' : real ? 'Все работы – реальные заказы.' : 'Демо-проекты: так выглядят сайты, которые я собираю для бизнесов.';
+  if (kinds.size > 1) $('worksNote').textContent = [kinds.has('real') && '«Реальный заказ» - за сайт заплатил владелец', kinds.has('study') && '«Учебный кейс» - задача из обучения', kinds.has('demo') && '«Демо-проект» - сайт, собранный на пробу'].filter(Boolean).join('. ') + '.';
+  else $('worksNote').textContent = real && real < cases.length ? '«Реальный заказ» - сайт, за который заплатил владелец. «Демо-проект» - собранный на пробу, «Учебный кейс» - задача из обучения.' : real ? 'Все работы - реальные заказы.' : 'Демо-проекты: так выглядят сайты, которые я собираю для бизнесов.';
 
   // мессенджеры: ссылка с готовым текстом; для MAX текст копируется в буфер
   const msg = D.message || 'Здравствуйте! Хочу заказать сайт.';
@@ -241,20 +322,28 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   const ico = {
     telegram: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.6l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg>',
     whatsapp: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.1c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1-3.2-1.1-5.3-4.3-5.4-4.5-.2-.2-1.3-1.7-1.3-3.3s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4.1.1.1.7-.1 1.4z"/></svg>',
+    vk: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.8 18.2C6.6 18.2 3 13.9 2.8 6.8h3.1c.1 5.2 2.4 7.4 4.2 7.9V6.8h2.9v4.5c1.8-.2 3.7-2.2 4.3-4.5h2.9c-.5 2.8-2.5 4.8-4 5.7 1.5.7 3.8 2.5 4.7 5.7h-3.2c-.7-2.1-2.4-3.8-4.7-4v4h-.2z"/></svg>',
+    phone: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>',
+    email: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.5 7v.1L12 12.4 19.5 7.1V7L12 12.2z"/></svg>',
+    sms: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>',
     max: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5A9.5 9.5 0 0 0 2.5 12c0 1.9.6 3.7 1.5 5.2L3 21l3.9-1a9.5 9.5 0 1 0 5.1-17.5zm-4 6.2h2l2 3.4 2-3.4h2v6.6h-1.8v-3.9l-1.8 3h-.8l-1.8-3v3.9H8z"/></svg>'
   };
   const links = [];
   if (M.telegram) links.push({ k: 'telegram', label: 'Telegram', href: `https://t.me/${String(M.telegram).replace(/^@|https?:\/\/t\.me\//g, '')}?text=${enc}` });
   if (M.whatsapp) links.push({ k: 'whatsapp', label: 'WhatsApp', href: `https://wa.me/${String(M.whatsapp).replace(/\D/g, '')}?text=${enc}` });
+  if (M.vk) links.push({ k: 'vk', label: 'ВКонтакте', href: M.vk });
+  if (M.phone) links.push({ k: 'phone', label: 'Позвонить', href: `tel:+${String(M.phone).replace(/\D/g, '')}`, plain: true });
+  if (M.sms) links.push({ k: 'sms', label: 'СМС', href: `sms:+${String(M.sms).replace(/\D/g, '')}?body=${enc}`, plain: true });
+  if (M.email) links.push({ k: 'email', label: 'Почта', href: `mailto:${M.email}?subject=${encodeURIComponent('Заказ сайта')}&body=${enc}`, plain: true });
   if (M.max) links.push({ k: 'max', label: 'MAX', href: M.max, copy: true });
   // бот-продавец: работы, цены и бриф круглые сутки (скилл «Бот-продавец»)
   if (M.bot) links.push({ k: 'telegram', label: 'Бот: работы и заявка', href: M.bot.startsWith('http') ? M.bot : `https://t.me/${M.bot.replace(/^@/, '')}` });
-  const ctaHtml = links.map((l, i) => `<a class="btn ${i === 0 ? 'btn-main' : 'btn-ghost'}" href="${esc(l.href)}" target="_blank" rel="noopener" ${l.copy ? 'data-copy' : ''}>${ico[l.k]}${l.label}</a>`).join('') || '<span>Добавьте мессенджер: «добавь в витрину Telegram …»</span>';
+  const ctaHtml = links.map((l, i) => `<a class="btn ${i === 0 ? 'btn-main' : 'btn-ghost'}" href="${esc(l.href)}" ${l.plain ? '' : 'target="_blank" rel="noopener"'} ${l.copy ? 'data-copy' : ''}>${ico[l.k]}${l.label}</a>`).join('') || '<span>Добавьте мессенджер: «добавь в витрину Telegram …»</span>';
   document.querySelectorAll('[data-cta]').forEach((el) => { el.innerHTML = ctaHtml; });
   const toast = (t) => { const el = $('toast'); el.textContent = t; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 3200); };
   document.addEventListener('click', (e) => {
     const a = e.target.closest('[data-copy]'); if (!a) return;
-    try { navigator.clipboard.writeText(msg); toast('Текст сообщения скопирован – вставьте его в чат MAX'); } catch (_) {}
+    try { navigator.clipboard.writeText(msg); toast('Текст сообщения скопирован - вставьте его в чат MAX'); } catch (_) {}
   });
 
   // живой телефон
@@ -264,7 +353,7 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   if (withShots.length) fan.innerHTML = withShots.slice(0, 3).map((c, i) => phone(c, 20 + i * 4)).join('');
   else { fan.classList.add('empty'); fan.textContent = 'Здесь появятся ваши работы: скажите Клоду «добавь в витрину сайт …»'; }
 
-  const story = (c) => [['Задача', c.task], ['Что сделал', c.did], ['Результат', c.result]].filter(([, v]) => v).map(([k, v]) => `<li><b>${k}</b><span>${esc(v)}</span></li>`).join('');
+  const story = (c) => [['Задача', c.task], ['Что сделала', c.did], ['Результат', c.result]].filter(([, v]) => v).map(([k, v]) => `<li><b>${k}</b><span>${esc(v)}</span></li>`).join('');
   $('cases').innerHTML = cases.map((c, i) => `
     <article class="case reveal">
       <div class="devices${c.desktop ? '' : ' solo'}">
@@ -283,9 +372,9 @@ footer{padding:26px 0 40px;color:var(--ink-3);font-size:14px;display:flex;flex-w
   $('price').innerHTML = (D.services || []).map((s) => `<li><h3>${esc(s.title)}</h3><p>${esc(s.desc || '')}</p><span class="sum">${esc(s.price || 'по запросу')}</span></li>`).join('');
   $('steps').innerHTML = (D.steps || [
     ['Демо до оплаты', 'Собираю демо вашего сайта по карточке на Картах или вашему описанию.'],
-    ['Правки словами', 'Говорите, что поменять, – меняю в тот же день.'],
-    ['Ваш адрес', 'Переношу сайт на ваш домен или в вашу Тильду.'],
-    ['Готово', 'Сайт работает и приводит заявки. Остаюсь на связи.']
+    ['Правки словами', 'Говорите, что поменять, и я вношу правки, пока результат не станет таким, как вы хотели.'],
+    ['Ваш адрес', 'Подключаю сайт к вашему домену и хостингу или даю подробную инструкцию.'],
+    ['Готово', 'Сайт запущен. Остаюсь на связи: 30 дней поддержки после запуска.']
   ]).map(([t, p]) => `<li><h3>${esc(t)}</h3><p>${esc(p)}</p></li>`).join('');
 
   // сдвиг прокрутки внутри телефона = высота скриншота минус экран
